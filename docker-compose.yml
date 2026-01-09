@@ -401,6 +401,8 @@ services:
         mailcow-network:
           aliases:
             - nginx
+      expose:
+        - "80"
 
     acme-mailcow:
       depends_on:
